@@ -34,10 +34,10 @@ conda activate SAM
 python3 sam.py
 date
 
-echo " condadeactivate tf-gpu-py36"
+## echo " condadeactivate tf-gpu-py36" ##
 
-conda deactivate #마무리 deactivate
+## conda deactivate #마무리 deactivate ##
 
-squeue--job $SLURM_JOBID
+## squeue--job $SLURM_JOBID ##
 
-echo  "##### END #####"
+## echo  "##### END #####"

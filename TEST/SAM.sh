@@ -1,13 +1,13 @@
-#!/bin/sh
-#SBATCH -J  test           # Job name
-#SBATCH -o  test.%j.out    # Name of stdout output file (%j expands to %jobId)
-#SBATCH -t 1-00:00:00        # Run time (hh:mm:ss) 
+!/bin/sh
+SBATCH -J  test           # Job name
+SBATCH -o  test.%j.out    # Name of stdout output file (%j expands to %jobId)
+SBATCH -t 1-00:00:00        # Run time (hh:mm:ss) 
 
 #### Select  GPU
-#SBATCH -p debug           # queue  name  or  partiton
-#SBATCH   --nodes=1              # number of nodes
-#SBATCH   --ntasks-per-node=1
-#SBATCH   --cpus-per-task=1
+SBATCH -p debug           # queue  name  or  partiton
+SBATCH   --nodes=1              # number of nodes
+SBATCH   --ntasks-per-node=1
+SBATCH   --cpus-per-task=1
 
 cd  $SLURM_SUBMIT_DIR
 
